@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  python:
+    build: .
+    volumes:
+      - ./output:/app/output
+    command: python py_script.py
